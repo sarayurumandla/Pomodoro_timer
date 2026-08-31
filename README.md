@@ -60,6 +60,7 @@ pip3 install flask
 ```bash
 python3 app.py
 ```
+Then go to the website by copy-pasting the HTTPs link given into the browser.
 
 ## How It Works
 
