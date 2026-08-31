@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Timer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <!-- Gives correct URL for style.css inside static folder-->
+</head>
+
+
+<body>
+    <!-- Navigation -->
+    <nav>
+        <h2>Pomodoro Timer</h2>
+        <button onclick="showScreen('home')">
+            Home
+        </button>
+
+        <button onclick="showScreen('work')">
+            Work
+        </button>
+
+        <button onclick="showScreen('break')">
+            Break
+        </button>
+    </nav>
+
+
+    <!-- Home Screen -->
+
+    <section id="home" class="screen active">
+        <h1>Welcome to your Pomodoro Timer</h1>
+
+        <p>
+            Focus for 25 minutes, then take a 5 minute break.
+        </p>
+
+        <button onclick="startPomodoro()">
+            Start Pomodoro
+        </button>
+    </section>
+
+
+    <!-- Work Screen -->
+
+    <section id="work" class="screen">
+        <h1>Work Session</h1>
+
+        <p>
+            Focus time
+        </p>
+
+        <div id="timer">
+            25:00
+        </div>
+
+        <button onclick="pauseTimer()" id="pauseButton">
+            Pause
+        </button>
+
+        <button onclick="resetTimer()">
+            Reset
+        </button>
+    </section>
+
+
+    <!-- Break Screen -->
+
+    <section id="break" class="screen">
+        <h1>Short Break</h1>
+
+        <p>
+            Take a breather before your next work session.
+        </p>
+
+        <div id="breakTimer">
+            05:00
+        </div>
+    </section>
+
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+    <!-- Gives correct URL for script.js inside static folder-->
+</body>
+
+</html>
+

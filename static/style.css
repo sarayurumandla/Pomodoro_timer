@@ -1,0 +1,94 @@
+/* General */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #eef2ff;
+    color: #172554;
+    text-align: center;
+}
+
+
+/* Navigation */
+
+nav {
+    background-color: #1e3a8a;
+    color: white;
+    padding: 20px;
+}
+
+nav h2 {
+    margin-top: 0;
+}
+
+nav button {
+    background-color: white;
+    color: #1e3a8a;
+    border: none;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+nav button:hover {
+    background-color: #dbeafe;
+}
+
+
+/* Screens */
+
+.screen {
+    display: none;
+    padding: 80px 20px;
+}
+
+.screen.active {
+    display: block;
+}
+
+
+/* Text */
+
+h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+p {
+    color: #475569;
+    line-height: 1.6;
+}
+
+
+/* Main Buttons */
+
+.screen button {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    margin: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.screen button:hover {
+    background-color: #1d4ed8;
+}
+
+
+/* Timer */
+
+#timer,
+#breakTimer {
+    background-color: white;
+    width: 300px;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 10px;
+    font-size: 50px;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
