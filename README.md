@@ -61,14 +61,6 @@ pip3 install flask
 python3 app.py
 ```
 
-### 5. Open the website
-
-Go to:
-
-```text
-http://127.0.0.1:5000
-```
-
 ## How It Works
 
 The application uses **Flask and Python** to serve the web application, while **JavaScript** handles the countdown and user interactions on the frontend.
@@ -96,11 +88,5 @@ Users can pause, resume or reset the timer at any point.
 * Add focus-time statistics
 * Store session history
 * Add sound notifications when a timer ends
-* Deploy the application online
 
-## Author
-
-**Sarayu R**
-
-Computer Science with Artificial Intelligence Student
 
